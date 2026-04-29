@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/wolf_logo.png" alt="Wolf Data Storage Logo" width="300" />
+</p>
+
 # 🐺 Wolf-Data-Storage: Trading Analysis & Bot Development Roadmap
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
