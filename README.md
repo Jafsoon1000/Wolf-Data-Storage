@@ -22,6 +22,7 @@ Our focus spans two major asset classes and their respective platforms:
 - [2. Crypto Bot Development Path](#-2-crypto-bot-development-path-binance)
 - [3. Forex & Commodities Bot Path](#-3-forex--commodities-bot-development-path-metatrader-5)
 - [4. Deployment & Maintenance](#-4-deployment--maintenance-roadmap)
+- [5. Repository Structure & Setup](#-5-repository-structure--setup)
 
 ---
 
@@ -109,9 +110,31 @@ MT5 provides native support for Forex and Commodities (e.g., XAUUSD) via the off
 - **Machine Learning Integration**: Leverage the extensive historical database within `Wolf-Data-Storage` to train models for anomaly detection and dynamic parameter optimization.
 - **Web Dashboard**: Develop a frontend UI (React/Next.js) connected to the database to visualize bot performance, active portfolio positions, and historical MSNR setups.
 
+## 📂 5. Repository Structure & Setup
+
+### 5.1. Directory Layout
+The repository is structured to separate data ingestion, analysis, execution, and testing:
+- **`src/`**: Contains core Python modules.
+  - `data_ingestion/`: Modules for streaming/polling data from Binance and MT5.
+  - `msnr_engine/`: Analytical logic for detecting MSS, BOS, and alignments.
+  - `execution/`: Order routing, risk management, and dynamic position sizing.
+- **`config/`**: Configuration management securely loading variables.
+- **`tests/`**: Unit tests and backtesting framework.
+- **`notebooks/`**: Jupyter notebooks for exploratory data analysis (EDA) and strategy prototyping.
+
+### 5.2. Local Setup Instructions
+1. **Environment Setup**: Copy `.env.example` to `.env` and fill in your API credentials.
+   ```bash
+   cp .env.example .env
+   ```
+2. **Install Dependencies**: Install the required Python packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
 ---
 
 <div align="center">
   <b>Developed for the Wolf-T-Analyst Ecosystem</b><br>
-  <i>Last Updated: April 2026</i>
+  <i>Last Updated: May 2026</i>
 </div>
