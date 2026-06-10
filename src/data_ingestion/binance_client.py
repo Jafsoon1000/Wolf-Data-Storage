@@ -20,8 +20,8 @@ class BinanceOHLCVClient:
         api_secret: Optional[str] = None,
         testnet: bool = False,
     ):
-        self.api_key = api_key or BINANCE_API_KEY
-        self.api_secret = api_secret or BINANCE_API_SECRET
+        self.api_key = api_key or BINANCE.api_key
+        self.api_secret = api_secret or BINANCE.api_secret
         if not self.api_key or not self.api_secret:
             raise ValueError("Binance API credentials are required to initialize the client.")
 
