@@ -132,6 +132,17 @@ The repository is structured to separate data ingestion, analysis, execution, an
    pip install -r requirements.txt
    ```
 
+3. **Install development dependencies**: Run tests and enable the local package path.
+   ```bash
+   pip install -r requirements-dev.txt
+   pip install -e .
+   ```
+
+4. **Run tests**:
+   ```bash
+   pytest
+   ```
+
 ---
 
 <div align="center">
